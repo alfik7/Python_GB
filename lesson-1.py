@@ -44,15 +44,15 @@ print("Сумма чисел n + nn + nnn - %d" % total)
 '''
 print('**** Четвертое задание ****')
 n = abs(int(input("Введите целое положительное число ")))
-max = n % 10
+maks_chislo = n % 10
 while n >= 1:
     n = n // 10
-    if n % 10 > max:
-        max = n % 10
+    if n % 10 > maks_chislo:
+        maks_chislo = n % 10
     if n > 9:
         continue
     else:
-        print("Максимальное цифра в числе ", max)
+        print("Максимальное цифра в числе ", maks_chislo)
         break
 '''
 Запросите у пользователя значения выручки и издержек фирмы.
@@ -93,7 +93,7 @@ b = int(input("Введите общий желаемый результат в 
 result_days = 1
 result_km = a
 while result_km < b:
-        a = a + 0.1 * a
-        result_days += 1
-        result_km = result_km + a
+    a = a + 0.1 * a
+    result_days += 1
+    result_km = result_km + a
 print(f"Вы достигнете требуемых показателей на %.d день" % result_days)
